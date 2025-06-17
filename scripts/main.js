@@ -1,6 +1,9 @@
 // Main JavaScript functionality for Infraverge website
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Force mobile navigation styles - critical fix
+    forceMobileNavigation();
+    
     // Initialize all functionality
     initNavigation();
     initAnimations();
@@ -9,6 +12,26 @@ document.addEventListener('DOMContentLoaded', function() {
     initContactForm();
     initMobileMenu();
 });
+
+// Simple mobile navigation management
+function forceMobileNavigation() {
+    function updateNavigation() {
+        const desktopElements = document.querySelectorAll('.desktop-only');
+        const mobileElements = document.querySelectorAll('.mobile-only');
+        const isMobile = window.innerWidth <= 768;
+        
+        desktopElements.forEach(el => {
+            el.style.display = isMobile ? 'none' : '';
+        });
+        
+        mobileElements.forEach(el => {
+            el.style.display = isMobile ? 'flex' : 'none';
+        });
+    }
+    
+    updateNavigation();
+    window.addEventListener('resize', updateNavigation);
+}
 
 // Navigation functionality
 function initNavigation() {
@@ -39,22 +62,40 @@ function initNavigation() {
 
 // Mobile menu functionality
 function initMobileMenu() {
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
     
-    if (hamburger && navMenu) {
+    if (hamburger && mobileMenu && mobileOverlay) {
+        // Toggle mobile menu
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
         });
 
+        // Close menu when clicking overlay
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
         // Close menu when clicking on a link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
+        document.querySelectorAll('.mobile-menu .nav-link').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
         });
+
+        // Close menu with escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                closeMobileMenu();
+            }
+        });
+
+        function closeMobileMenu() {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
     }
 }
 

@@ -54,7 +54,8 @@
                     <span class="logo-text">infraverge</span>
                 </div>
             </div>
-            <ul class="nav-menu">
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu desktop-only">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="vision.html" class="nav-link">Vision</a></li>
                 <li><a href="products.html" class="nav-link">Services</a></li>
@@ -65,16 +66,37 @@
                 <li><a href="about.html" class="nav-link active">About</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
-            <div class="nav-cta">
+            <div class="nav-cta desktop-only">
                 <a href="contact.html" class="btn-primary">Get Consultation</a>
             </div>
-            <div class="hamburger">
+            
+            <!-- Mobile Hamburger -->
+            <div class="hamburger mobile-only" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="vision.html" class="nav-link">Vision</a></li>
+            <li><a href="products.html" class="nav-link">Services</a></li>
+            <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+            <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
+            <li><a href="technology.html" class="nav-link">Technology</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-cta">
+            <a href="contact.html" class="btn-primary" style="width: 100%; justify-content: center;">Get Consultation</a>
+        </div>
+    </div>
 
     <!-- Page Header -->
     <section class="page-header">
