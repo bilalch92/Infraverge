@@ -961,6 +961,28 @@ body {
         height: 70px;
     }
     
+    /* Fix content overlap with fixed header */
+    .hero,
+    .page-header {
+        padding-top: 100px;
+    }
+    
+    /* For pages without hero/page-header, ensure first content section has proper spacing */
+    body > section:first-of-type:not(.hero):not(.page-header),
+    .content-section:first-of-type {
+        padding-top: 100px;
+    }
+    
+    /* Ensure any direct content after nav doesn't overlap */
+    .navbar + * {
+        margin-top: 70px;
+    }
+    
+    .navbar + .hero,
+    .navbar + .page-header {
+        margin-top: 0;
+    }
+    
     .logo-text {
         font-size: 18px;
     }
@@ -970,7 +992,7 @@ body {
     }
     
     .hero {
-        padding: 100px 0 60px;
+        padding: 120px 0 60px;
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -1161,7 +1183,21 @@ body {
     }
     
     .hero {
-        padding: 90px 0 50px;
+        padding: 110px 0 50px;
+    }
+    
+    .page-header {
+        padding: 110px 0 40px;
+    }
+    
+    /* Additional spacing for very small screens */
+    .content-section:first-of-type,
+    body > section:first-of-type:not(.hero):not(.page-header) {
+        padding-top: 110px;
+    }
+    
+    .navbar + * {
+        margin-top: 65px;
     }
     
     .btn-primary.large,
