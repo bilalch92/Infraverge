@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Infraverge</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Server Stack with Morse Code Pattern -->
+                        <rect x="1" y="1" width="30" height="5" rx="2" fill="url(#gradient1)" />
+                        <rect x="4" y="8" width="24" height="5" rx="2" fill="url(#gradient2)" />
+                        <rect x="2" y="15" width="28" height="5" rx="2" fill="url(#gradient3)" />
+                        
+                        <!-- Morse Code Indicators -->
+                        <circle cx="6" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <rect x="10" y="3" width="5" height="1" rx="0.5" fill="rgba(255,255,255,0.9)" class="morse-dash" />
+                        <circle cx="18" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        
+                        <circle cx="10" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="16" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        
+                        <circle cx="8" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="14" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="20" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="24" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        
+                        <defs>
+                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FF4081" />
+                                <stop offset="100%" stop-color="#FF6B35" />
+                            </linearGradient>
+                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FF6B35" />
+                                <stop offset="100%" stop-color="#FF8A65" />
+                            </linearGradient>
+                            <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FF4081" />
+                                <stop offset="100%" stop-color="#FF8A65" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text-container">
+                    <span class="logo-text">infraverge</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="vision.html" class="nav-link">Vision</a></li>
+                <li><a href="products.html" class="nav-link">Services</a></li>
+                <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
+                <li><a href="technology.html" class="nav-link">Technology</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="contact.html" class="btn-primary">Get Consultation</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">About Infraverge</h1>
+            <p class="page-subtitle">
+                We're a team of visionaries, engineers, and AI experts united by a common mission: 
+                to build the infrastructure that will power the next generation of intelligent applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- Company Story -->
+    <section class="content-section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title">Our Story</h2>
+                <p style="font-size: 1.2rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 40px;">
+                    Founded in 2025 by a team of former engineers from leading cloud providers and AI companies, 
+                    Infraverge was born from the frustration of watching brilliant AI innovations fail due to 
+                    infrastructure limitations. We believe that in the age of artificial intelligence, 
+                    infrastructure itself must be intelligent.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.7; color: var(--text-muted);">
+                    Today, we're building the world's first AI-native cloud platform, designed from the ground up 
+                    to understand, adapt, and optimize for machine learning workloads. Our mission is to make 
+                    advanced AI infrastructure accessible to organizations of all sizes, democratizing the power 
+                    of intelligent computing.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="content-section" style="background: var(--darker-bg);">
+        <div class="container">
+            <h2 class="section-title">Leadership Team</h2>
+            <div class="content-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="content-card" style="text-align: center;">
+                    <div style="width: 120px; height: 120px; border-radius: 50%; background: var(--gradient-primary); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--dark-bg);">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Alex Chen</h3>
+                    <p style="color: var(--primary-color); margin: 10px 0;">CEO & Co-Founder</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        Former Principal Engineer at Google Cloud. 15+ years building scalable infrastructure 
+                        for mission-critical applications.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 15px;">
+                        <a href="#" style="color: var(--text-muted);"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: var(--text-muted);"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="content-card" style="text-align: center;">
+                    <div style="width: 120px; height: 120px; border-radius: 50%; background: var(--gradient-secondary); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--dark-bg);">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Sarah Rodriguez</h3>
+                    <p style="color: var(--primary-color); margin: 10px 0;">CTO & Co-Founder</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        Former AI Research Lead at OpenAI. Pioneer in distributed machine learning systems 
+                        and edge computing architectures.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 15px;">
+                        <a href="#" style="color: var(--text-muted);"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: var(--text-muted);"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="content-card" style="text-align: center;">
+                    <div style="width: 120px; height: 120px; border-radius: 50%; background: var(--gradient-primary); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--dark-bg);">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Marcus Thompson</h3>
+                    <p style="color: var(--primary-color); margin: 10px 0;">VP of Engineering</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                        Former Staff Engineer at AWS. Expert in container orchestration, microservices, 
+                        and cloud-native architecture patterns.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 15px;">
+                        <a href="#" style="color: var(--text-muted);"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="color: var(--text-muted);"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Values -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Innovation First</h3>
+                    <p>
+                        We believe in pushing the boundaries of what's possible. Every decision we make 
+                        is guided by our commitment to breakthrough innovation rather than incremental improvement.
+                    </p>
+                </div>
+                <div class="content-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Customer Obsession</h3>
+                    <p>
+                        Our customers' success is our success. We build technology that solves real problems 
+                        and creates genuine value for the organizations we serve.
+                    </p>
+                </div>
+                <div class="content-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Impact</h3>
+                    <p>
+                        We're building infrastructure that will enable the next generation of AI applications 
+                        to solve humanity's greatest challenges, from climate change to healthcare.
+                    </p>
+                </div>
+                <div class="content-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Trust & Security</h3>
+                    <p>
+                        Security and privacy are not features — they're foundational. We build trust through 
+                        transparency, robust security practices, and unwavering commitment to data protection.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="content-section" style="background: var(--gradient-dark);">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title">Join Our Team</h2>
+                <p style="font-size: 1.2rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 40px;">
+                    We're looking for talented individuals who share our passion for building the future of 
+                    intelligent infrastructure. Join us in creating technology that will power the next 
+                    decade of AI innovation.
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 40px;">
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">Remote-First</h4>
+                        <p style="color: var(--text-muted);">Work from anywhere in the world</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">Competitive Equity</h4>
+                        <p style="color: var(--text-muted);">Share in our success and growth</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">Learning Budget</h4>
+                        <p style="color: var(--text-muted);">$5000 annually for conferences and courses</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 10px;">Unlimited PTO</h4>
+                        <p style="color: var(--text-muted);">Take time when you need it most</p>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn-primary large">
+                    <i class="fas fa-briefcase"></i>
+                    View Open Positions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build the Future?</h2>
+                <p>Let's discuss how Infraverge can transform your infrastructure and accelerate your AI initiatives.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary large">
+                        <i class="fas fa-rocket"></i>
+                        Get Started
+                    </a>
+                    <a href="products.html" class="btn-outline large">
+                        <i class="fas fa-cogs"></i>
+                        Explore Products
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="nav-logo">
+                            <div class="logo-icon">
+                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="30" height="5" rx="2" fill="url(#footerGradient1)" />
+                                    <rect x="4" y="8" width="24" height="5" rx="2" fill="url(#footerGradient2)" />
+                                    <rect x="2" y="15" width="28" height="5" rx="2" fill="url(#footerGradient3)" />
+                                    <circle cx="6" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <rect x="10" y="3" width="5" height="1" rx="0.5" fill="rgba(255,255,255,0.9)" class="morse-dash" />
+                                    <circle cx="18" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="10" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="16" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="8" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="14" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="20" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="24" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <defs>
+                                        <linearGradient id="footerGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#FF4081" />
+                                            <stop offset="100%" stop-color="#FF6B35" />
+                                        </linearGradient>
+                                        <linearGradient id="footerGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#FF6B35" />
+                                            <stop offset="100%" stop-color="#FF8A65" />
+                                        </linearGradient>
+                                        <linearGradient id="footerGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#FF4081" />
+                                            <stop offset="100%" stop-color="#FF8A65" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="logo-text-container">
+                                <span class="logo-text">infraverge</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Next-generation cloud infrastructure consulting and AI-driven solutions. We partner with enterprises to design, implement, and optimize intelligent infrastructure.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="products.html">Cloud Architecture</a></li>
+                        <li><a href="products.html">AI Optimization</a></li>
+                        <li><a href="products.html">Migration Services</a></li>
+                        <li><a href="products.html">24/7 Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="vision.html">Our Vision</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="use-cases.html">Use Cases</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="contact.html">Get Started</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Infraverge. All rights reserved. Next-generation infrastructure consulting.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+</body>
+</html>

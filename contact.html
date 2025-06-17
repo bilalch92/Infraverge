@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Infraverge</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Server Stack with Morse Code Pattern -->
+                        <rect x="1" y="1" width="30" height="5" rx="2" fill="url(#gradient1)" />
+                        <rect x="4" y="8" width="24" height="5" rx="2" fill="url(#gradient2)" />
+                        <rect x="2" y="15" width="28" height="5" rx="2" fill="url(#gradient3)" />
+                        
+                        <!-- Morse Code Indicators -->
+                        <circle cx="6" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <rect x="10" y="3" width="5" height="1" rx="0.5" fill="rgba(255,255,255,0.9)" class="morse-dash" />
+                        <circle cx="18" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        
+                        <circle cx="10" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="16" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        
+                        <circle cx="8" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="14" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="20" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="24" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        
+                        <defs>
+                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FF4081" />
+                                <stop offset="100%" stop-color="#FF6B35" />
+                            </linearGradient>
+                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FF6B35" />
+                                <stop offset="100%" stop-color="#FF8A65" />
+                            </linearGradient>
+                            <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FF4081" />
+                                <stop offset="100%" stop-color="#FF8A65" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text-container">
+                    <span class="logo-text">infraverge</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="vision.html" class="nav-link">Vision</a></li>
+                <li><a href="products.html" class="nav-link">Services</a></li>
+                <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="use-cases.html" class="nav-link">Use Cases</a></li>
+                <li><a href="technology.html" class="nav-link">Technology</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="contact.html" class="btn-primary">Get Consultation</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">
+                Ready to revolutionize your infrastructure? Let's discuss how Infraverge can transform your business.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="content-card" style="text-align: center;">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Schedule a Demo</h3>
+                    <p>
+                        Book a personalized demo to see Infraverge in action and discover how it can 
+                        transform your cloud infrastructure.
+                    </p>
+                    <a href="#" class="btn-primary" style="margin-top: 20px;">
+                        <i class="fas fa-video"></i>
+                        Schedule Demo
+                    </a>
+                </div>
+                <div class="content-card" style="text-align: center;">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Enterprise Inquiry</h3>
+                    <p>
+                        Discuss enterprise solutions, custom integrations, and strategic partnerships 
+                        with our business development team.
+                    </p>
+                    <a href="#enterprise-form" class="btn-outline" style="margin-top: 20px;">
+                        <i class="fas fa-handshake"></i>
+                        Enterprise Contact
+                    </a>
+                </div>
+                <div class="content-card" style="text-align: center;">
+                    <div class="feature-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>
+                        Get help with technical issues, integration questions, or platform guidance 
+                        from our expert support team.
+                    </p>
+                    <a href="#support-form" class="btn-secondary" style="margin-top: 20px;">
+                        <i class="fas fa-headset"></i>
+                        Get Support
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="content-section" style="background: var(--darker-bg);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title">Send us a Message</h2>
+                <form id="contact-form" class="content-card">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="form-label">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" class="form-input" required>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject *</label>
+                        <select id="subject" name="subject" class="form-select" required>
+                            <option value="">Select a topic...</option>
+                            <option value="demo">Request a Demo</option>
+                            <option value="enterprise">Enterprise Inquiry</option>
+                            <option value="technical">Technical Question</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="support">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message *</label>
+                        <textarea id="message" name="message" class="form-textarea" 
+                                  placeholder="Tell us about your infrastructure needs and challenges..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label style="display: flex; align-items: center; gap: 10px; color: var(--text-secondary);">
+                            <input type="checkbox" name="newsletter" style="width: auto;">
+                            Subscribe to our newsletter for AI infrastructure insights and updates
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-primary large" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                <div class="content-card" style="text-align: center;">
+                    <i class="fas fa-map-marker-alt" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Headquarters</h3>
+                    <p style="color: var(--text-secondary); margin-top: 15px;">
+                        San Francisco, CA<br>
+                        United States
+                    </p>
+                </div>
+                <div class="content-card" style="text-align: center;">
+                    <i class="fas fa-envelope" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Email</h3>
+                    <p style="color: var(--text-secondary); margin-top: 15px;">
+                        hello@infraverge.ai<br>
+                        enterprise@infraverge.ai
+                    </p>
+                </div>
+                <div class="content-card" style="text-align: center;">
+                    <i class="fas fa-clock" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Support Hours</h3>
+                    <p style="color: var(--text-secondary); margin-top: 15px;">
+                        24/7 Technical Support<br>
+                        Business Hours: 9 AM - 6 PM PST
+                    </p>
+                </div>
+                <div class="content-card" style="text-align: center;">
+                    <i class="fas fa-globe" style="font-size: 2rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                    <h3>Global Presence</h3>
+                    <p style="color: var(--text-secondary); margin-top: 15px;">
+                        20+ Data Centers<br>
+                        6 Continents
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Locations -->
+    <section class="content-section" style="background: var(--gradient-dark);">
+        <div class="container">
+            <h2 class="section-title">Our Offices</h2>
+            <div class="content-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                <div class="content-card">
+                    <h3>San Francisco (HQ)</h3>
+                    <p style="color: var(--text-secondary); margin: 15px 0;">
+                        123 Innovation Drive<br>
+                        San Francisco, CA 94105<br>
+                        United States
+                    </p>
+                    <div style="color: var(--text-muted);">
+                        <i class="fas fa-phone"></i> +1 (555) 123-4567<br>
+                        <i class="fas fa-envelope"></i> sf@infraverge.ai
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3>London</h3>
+                    <p style="color: var(--text-secondary); margin: 15px 0;">
+                        45 Tech Square<br>
+                        London EC2A 4DN<br>
+                        United Kingdom
+                    </p>
+                    <div style="color: var(--text-muted);">
+                        <i class="fas fa-phone"></i> +44 20 7123 4567<br>
+                        <i class="fas fa-envelope"></i> london@infraverge.ai
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3>Singapore</h3>
+                    <p style="color: var(--text-secondary); margin: 15px 0;">
+                        88 Market Street<br>
+                        Singapore 048948<br>
+                        Singapore
+                    </p>
+                    <div style="color: var(--text-muted);">
+                        <i class="fas fa-phone"></i> +65 6123 4567<br>
+                        <i class="fas fa-envelope"></i> singapore@infraverge.ai
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest AI infrastructure insights, product updates, and industry news delivered to your inbox.</p>
+                <div style="max-width: 500px; margin: 40px auto 0;">
+                    <form style="display: flex; gap: 15px;">
+                        <input type="email" placeholder="Enter your email" 
+                               style="flex: 1; padding: 15px; border: 1px solid rgba(255,255,255,0.2); border-radius: var(--border-radius); background: rgba(255,255,255,0.1); color: var(--text-primary);">
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="nav-logo">
+                            <div class="logo-icon">
+                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="30" height="5" rx="2" fill="url(#footerGradient1)" />
+                                    <rect x="4" y="8" width="24" height="5" rx="2" fill="url(#footerGradient2)" />
+                                    <rect x="2" y="15" width="28" height="5" rx="2" fill="url(#footerGradient3)" />
+                                    <circle cx="6" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <rect x="10" y="3" width="5" height="1" rx="0.5" fill="rgba(255,255,255,0.9)" class="morse-dash" />
+                                    <circle cx="18" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="10" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="16" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="8" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="14" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="20" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="24" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <defs>
+                                        <linearGradient id="footerGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#FF4081" />
+                                            <stop offset="100%" stop-color="#FF6B35" />
+                                        </linearGradient>
+                                        <linearGradient id="footerGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#FF6B35" />
+                                            <stop offset="100%" stop-color="#FF8A65" />
+                                        </linearGradient>
+                                        <linearGradient id="footerGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#FF4081" />
+                                            <stop offset="100%" stop-color="#FF8A65" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="logo-text-container">
+                                <span class="logo-text">infraverge</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Next-generation cloud infrastructure consulting and AI-driven solutions. We partner with enterprises to design, implement, and optimize intelligent infrastructure.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="products.html">Cloud Architecture</a></li>
+                        <li><a href="products.html">AI Optimization</a></li>
+                        <li><a href="products.html">Migration Services</a></li>
+                        <li><a href="products.html">24/7 Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="vision.html">Our Vision</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="use-cases.html">Use Cases</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="contact.html">Get Started</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Infraverge. All rights reserved. Next-generation infrastructure consulting.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+</body>
+</html>

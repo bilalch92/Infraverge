@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Cases - Infraverge</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Server Stack with Morse Code Pattern -->
+                        <rect x="1" y="1" width="30" height="5" rx="2" fill="url(#gradient1)" />
+                        <rect x="4" y="8" width="24" height="5" rx="2" fill="url(#gradient2)" />
+                        <rect x="2" y="15" width="28" height="5" rx="2" fill="url(#gradient3)" />
+                        
+                        <!-- Morse Code Indicators -->
+                        <circle cx="6" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <rect x="10" y="3" width="5" height="1" rx="0.5" fill="rgba(255,255,255,0.9)" class="morse-dash" />
+                        <circle cx="18" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        
+                        <circle cx="10" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="16" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        
+                        <circle cx="8" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="14" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="20" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        <circle cx="24" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                        
+                        <defs>
+                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FF4081" />
+                                <stop offset="100%" stop-color="#FF6B35" />
+                            </linearGradient>
+                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FF6B35" />
+                                <stop offset="100%" stop-color="#FF8A65" />
+                            </linearGradient>
+                            <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FF4081" />
+                                <stop offset="100%" stop-color="#FF8A65" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text-container">
+                    <span class="logo-text">infraverge</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="vision.html" class="nav-link">Vision</a></li>
+                <li><a href="products.html" class="nav-link">Services</a></li>
+                <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+                <li><a href="use-cases.html" class="nav-link active">Use Cases</a></li>
+                <li><a href="technology.html" class="nav-link">Technology</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="contact.html" class="btn-primary">Get Consultation</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Real-World Use Cases</h1>
+            <p class="page-subtitle">
+                Discover how leading organizations leverage Infraverge's AI-driven infrastructure to solve complex challenges and drive innovation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Case Study -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-card" style="padding: 60px; background: var(--gradient-dark);">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Featured Case Study</h2>
+                    <h3 style="color: var(--primary-color); font-size: 2rem; margin-bottom: 30px;">Global FinTech Accelerates AI Trading Platform</h3>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Challenge</h4>
+                        <p style="margin-bottom: 30px; line-height: 1.8;">
+                            A leading financial technology company needed to deploy real-time AI trading algorithms 
+                            capable of processing millions of transactions per second with sub-millisecond latency 
+                            while maintaining strict regulatory compliance.
+                        </p>
+                        
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Solution</h4>
+                        <p style="margin-bottom: 30px; line-height: 1.8;">
+                            Infraverge designed a hybrid edge-cloud architecture with AI-optimized GPU clusters, 
+                            intelligent load balancing, and real-time compliance monitoring across 15 global markets.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 20px;">Results</h4>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div style="text-align: center; padding: 20px; background: rgba(255,255,255,0.05); border-radius: var(--border-radius);">
+                                <div style="font-size: 2.5rem; color: var(--primary-color); font-weight: 700;">150μs</div>
+                                <div style="color: var(--text-muted);">Average Latency</div>
+                            </div>
+                            <div style="text-align: center; padding: 20px; background: rgba(255,255,255,0.05); border-radius: var(--border-radius);">
+                                <div style="font-size: 2.5rem; color: var(--primary-color); font-weight: 700;">$50M</div>
+                                <div style="color: var(--text-muted);">Annual Savings</div>
+                            </div>
+                            <div style="text-align: center; padding: 20px; background: rgba(255,255,255,0.05); border-radius: var(--border-radius);">
+                                <div style="font-size: 2.5rem; color: var(--primary-color); font-weight: 700;">99.99%</div>
+                                <div style="color: var(--text-muted);">Uptime</div>
+                            </div>
+                            <div style="text-align: center; padding: 20px; background: rgba(255,255,255,0.05); border-radius: var(--border-radius);">
+                                <div style="font-size: 2.5rem; color: var(--primary-color); font-weight: 700;">6x</div>
+                                <div style="color: var(--text-muted);">ROI Increase</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Case Categories -->
+    <section class="content-section" style="background: var(--darker-bg);">
+        <div class="container">
+            <h2 class="section-title">Use Case Categories</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Model Deployment</h3>
+                    <p>
+                        Rapid deployment and scaling of machine learning models with automated optimization 
+                        and intelligent resource allocation.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <h5 style="color: var(--primary-color);">Example:</h5>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            Healthcare startup deployed computer vision models for medical imaging analysis, 
+                            achieving 95% accuracy with 70% cost reduction.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Real-Time Analytics</h3>
+                    <p>
+                        Process massive data streams in real-time with AI-powered analytics engines 
+                        for instant insights and decision making.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <h5 style="color: var(--primary-color);">Example:</h5>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            E-commerce platform processes 1B+ events daily for personalized recommendations, 
+                            increasing conversion rates by 45%.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Edge Computing</h3>
+                    <p>
+                        Distribute AI processing to edge locations for ultra-low latency applications 
+                        with intelligent workload orchestration.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <h5 style="color: var(--primary-color);">Example:</h5>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            Smart city deployment reduced traffic congestion by 30% through real-time 
+                            traffic light optimization across 500+ intersections.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Compliance & Security</h3>
+                    <p>
+                        Maintain strict regulatory compliance with automated monitoring, audit trails, 
+                        and AI-powered security threat detection.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <h5 style="color: var(--primary-color);">Example:</h5>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            Financial institution achieved SOC 2 compliance while reducing security incidents 
+                            by 80% through AI threat detection.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Predictive Maintenance</h3>
+                    <p>
+                        Prevent equipment failures with AI-powered predictive analytics and 
+                        automated maintenance scheduling.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <h5 style="color: var(--primary-color);">Example:</h5>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            Manufacturing company reduced unplanned downtime by 85% and maintenance 
+                            costs by 40% through predictive analytics.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Migration</h3>
+                    <p>
+                        Seamlessly migrate legacy systems to AI-native cloud infrastructure with 
+                        zero downtime and optimal performance.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <h5 style="color: var(--primary-color);">Example:</h5>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">
+                            Enterprise migrated 200+ applications to AI-optimized cloud, achieving 
+                            60% cost savings and 10x performance improvement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Case Studies -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Industry Success Stories</h2>
+            <div class="content-grid" style="grid-template-columns: 1fr;">
+                <div class="content-card" style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center;">
+                    <div style="text-align: center;">
+                        <i class="fas fa-heartbeat" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h3>Healthcare AI</h3>
+                        <h4 style="color: var(--primary-color);">MedTech Innovator</h4>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 20px; line-height: 1.8;">
+                            <strong>Challenge:</strong> Process 10TB of daily medical imaging data while maintaining 
+                            HIPAA compliance and enabling real-time AI diagnostics for 500+ hospitals.
+                        </p>
+                        <p style="margin-bottom: 20px; line-height: 1.8;">
+                            <strong>Solution:</strong> Deployed HIPAA-compliant AI pipeline with automated data 
+                            processing, federated learning, and real-time inference capabilities.
+                        </p>
+                        <div style="display: flex; gap: 30px;">
+                            <div><strong style="color: var(--primary-color);">95%</strong><br><span style="color: var(--text-muted);">Diagnostic Accuracy</span></div>
+                            <div><strong style="color: var(--primary-color);">2 min</strong><br><span style="color: var(--text-muted);">Processing Time</span></div>
+                            <div><strong style="color: var(--primary-color);">100%</strong><br><span style="color: var(--text-muted);">Compliance Rate</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card" style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center;">
+                    <div style="text-align: center;">
+                        <i class="fas fa-shopping-cart" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h3>E-commerce Scale</h3>
+                        <h4 style="color: var(--primary-color);">Global Retailer</h4>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 20px; line-height: 1.8;">
+                            <strong>Challenge:</strong> Handle Black Friday traffic spikes (100x normal load) while 
+                            delivering personalized experiences to 50M+ concurrent users.
+                        </p>
+                        <p style="margin-bottom: 20px; line-height: 1.8;">
+                            <strong>Solution:</strong> Auto-scaling AI recommendation engine with intelligent load 
+                            balancing and real-time personalization across global CDN.
+                        </p>
+                        <div style="display: flex; gap: 30px;">
+                            <div><strong style="color: var(--primary-color);">99.9%</strong><br><span style="color: var(--text-muted);">Uptime</span></div>
+                            <div><strong style="color: var(--primary-color);">300ms</strong><br><span style="color: var(--text-muted);">Page Load Time</span></div>
+                            <div><strong style="color: var(--primary-color);">35%</strong><br><span style="color: var(--text-muted);">Revenue Increase</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card" style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px; align-items: center;">
+                    <div style="text-align: center;">
+                        <i class="fas fa-industry" style="font-size: 4rem; color: var(--primary-color); margin-bottom: 20px;"></i>
+                        <h3>Smart Manufacturing</h3>
+                        <h4 style="color: var(--primary-color);">Auto Manufacturer</h4>
+                    </div>
+                    <div>
+                        <p style="margin-bottom: 20px; line-height: 1.8;">
+                            <strong>Challenge:</strong> Optimize production across 25 factories with predictive 
+                            maintenance and quality control for 1000+ machines.
+                        </p>
+                        <p style="margin-bottom: 20px; line-height: 1.8;">
+                            <strong>Solution:</strong> IoT sensor integration with AI analytics for predictive 
+                            maintenance, quality control, and production optimization.
+                        </p>
+                        <div style="display: flex; gap: 30px;">
+                            <div><strong style="color: var(--primary-color);">85%</strong><br><span style="color: var(--text-muted);">Downtime Reduction</span></div>
+                            <div><strong style="color: var(--primary-color);">25%</strong><br><span style="color: var(--text-muted);">Efficiency Gain</span></div>
+                            <div><strong style="color: var(--primary-color);">$100M</strong><br><span style="color: var(--text-muted);">Annual Savings</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Timeline -->
+    <section class="content-section" style="background: var(--gradient-dark);">
+        <div class="container">
+            <h2 class="section-title">Typical Implementation Timeline</h2>
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+                    <div style="text-align: center;">
+                        <div style="background: var(--primary-color); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 700; font-size: 1.2rem;">Week 1</div>
+                        <h4>Discovery</h4>
+                        <p style="color: var(--text-muted); margin-top: 10px;">
+                            Assessment, requirements gathering, and solution design
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: var(--secondary-color); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 700; font-size: 1.2rem;">Week 2-3</div>
+                        <h4>Pilot Setup</h4>
+                        <p style="color: var(--text-muted); margin-top: 10px;">
+                            Proof of concept deployment and initial testing
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: var(--primary-color); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 700; font-size: 1.2rem;">Week 4-8</div>
+                        <h4>Full Deployment</h4>
+                        <p style="color: var(--text-muted); margin-top: 10px;">
+                            Production rollout, migration, and optimization
+                        </p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="background: var(--secondary-color); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-weight: 700; font-size: 1.2rem;">Ongoing</div>
+                        <h4>Optimization</h4>
+                        <p style="color: var(--text-muted); margin-top: 10px;">
+                            Continuous monitoring, tuning, and support
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Build the Future?</h2>
+                <p>See how Infraverge can solve your specific infrastructure challenges. Let's discuss your use case and create a custom solution.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary large">
+                        <i class="fas fa-comments"></i>
+                        Discuss Your Use Case
+                    </a>
+                    <a href="portfolio.html" class="btn-outline large">
+                        <i class="fas fa-folder-open"></i>
+                        View Portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="nav-logo">
+                            <div class="logo-icon">
+                                <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="30" height="5" rx="2" fill="url(#footerGradient1)" />
+                                    <rect x="4" y="8" width="24" height="5" rx="2" fill="url(#footerGradient2)" />
+                                    <rect x="2" y="15" width="28" height="5" rx="2" fill="url(#footerGradient3)" />
+                                    <circle cx="6" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <rect x="10" y="3" width="5" height="1" rx="0.5" fill="rgba(255,255,255,0.9)" class="morse-dash" />
+                                    <circle cx="18" cy="3.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="10" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="16" cy="10.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="8" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="14" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="20" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <circle cx="24" cy="17.5" r="1" fill="rgba(255,255,255,0.9)" class="morse-dot" />
+                                    <defs>
+                                        <linearGradient id="footerGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#FF4081" />
+                                            <stop offset="100%" stop-color="#FF6B35" />
+                                        </linearGradient>
+                                        <linearGradient id="footerGradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#FF6B35" />
+                                            <stop offset="100%" stop-color="#FF8A65" />
+                                        </linearGradient>
+                                        <linearGradient id="footerGradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" stop-color="#FF4081" />
+                                            <stop offset="100%" stop-color="#FF8A65" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="logo-text-container">
+                                <span class="logo-text">infraverge</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Next-generation cloud infrastructure consulting and AI-driven solutions. We partner with enterprises to design, implement, and optimize intelligent infrastructure.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="products.html">Cloud Architecture</a></li>
+                        <li><a href="products.html">AI Optimization</a></li>
+                        <li><a href="products.html">Migration Services</a></li>
+                        <li><a href="products.html">24/7 Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="vision.html">Our Vision</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="solutions.html">Solutions</a></li>
+                        <li><a href="use-cases.html">Use Cases</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                        <li><a href="contact.html">Get Started</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Infraverge. All rights reserved. Next-generation infrastructure consulting.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+</body>
+</html>
